@@ -7,6 +7,7 @@ using namespace std::chrono;
 #include "src/JsonTree.h"
 #include "src/JsonReader.h"
 #include "src/FileLexContext.h"
+
 void dumpFilters(bool shouldFilter=true,bool useStringPooling=false);
 void dumpState(JsonReader jsonReader);
 void dumpFile();
