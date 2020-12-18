@@ -1,0 +1,54 @@
+# 1 "/home/honey/json/.vscode/tasks.json"
+# 1 "/home/honey/json//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 31 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 32 "<command-line>" 2
+# 1 "/home/honey/json/.vscode/tasks.json"
+{
+ "version": "2.0.0",
+ "tasks": [
+  {
+   "type": "cppbuild",
+   "label": "C/C++: cpp build active file",
+   "command": "/usr/bin/cpp",
+   "args": [
+    "-g",
+    "${file}",
+    "-o",
+    "${fileDirname}/${fileBasenameNoExtension}"
+   ],
+   "options": {
+    "cwd": "${workspaceFolder}"
+   },
+   "problemMatcher": [
+    "$gcc"
+   ],
+   "group": {
+    "kind": "build",
+    "isDefault": true
+   },
+   "detail": "compiler: /usr/bin/cpp"
+  },
+  {
+   "type": "cppbuild",
+   "label": "C/C++: g++ build active file",
+   "command": "/usr/bin/g++",
+   "args": [
+    "-g",
+    "${file}",
+    "-o",
+    "${fileDirname}/${fileBasenameNoExtension}"
+   ],
+   "options": {
+    "cwd": "${workspaceFolder}"
+   },
+   "problemMatcher": [
+    "$gcc"
+   ],
+   "group": "build",
+   "detail": "compiler: /usr/bin/g++"
+  }
+ ]
+}
