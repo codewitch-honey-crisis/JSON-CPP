@@ -4,9 +4,9 @@
 using namespace std::chrono;
 
 // include JsonTree.h before JsonReader.h if you're going to use both
-#include "JsonTree.h"
-#include "JsonReader.h"
-#include "FileLexContext.h"
+#include "src/JsonTree.h"
+#include "src/JsonReader.h"
+#include "src/FileLexContext.h"
 void dumpFilters(bool shouldFilter=true,bool useStringPooling=false);
 void dumpState(JsonReader jsonReader);
 void dumpFile();
