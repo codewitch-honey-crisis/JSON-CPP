@@ -22,11 +22,11 @@ int main()
 {
     
     //dumpFilters(false);
-    //dumpFilters(true);
+    dumpFilters(true);
     //dumpFile();
     //dumpProductionCompanies();
     //dumpShowName();
-    dumpEpisodes(false);
+    //dumpEpisodes(false);
     //dumpAllIds();
 
 }
