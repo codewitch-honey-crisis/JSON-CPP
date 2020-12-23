@@ -61,7 +61,7 @@ void showShowExtraction(bool load) {
     JsonElement lastEpisodeToAirName;
     
     // create nested the extraction query for $.created_by.name and $.created_by.profile_path
-    const char* createdByFields[] = {"name","profole_path"}; // misspell profile_path deliberately to demonstrate <no result> 
+    const char* createdByFields[] = {"name","profile_path"}; // misspell profile_path deliberately to demonstrate <no result> 
     JsonExtractor createdByExtractions[] = {JsonExtractor(&creditName),JsonExtractor(&creditProfilePath)};
     JsonExtractor createdByExtraction(createdByFields,2,createdByExtractions);
     // we want the first index of the created_by array: $.created_by[0]
