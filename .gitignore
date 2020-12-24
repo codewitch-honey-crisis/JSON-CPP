@@ -1,6 +1,4 @@
-main
-src/FileLexContext
-src/JsonReader
 src/MemoryPool
 src/ut8
 main
+bulk.json
