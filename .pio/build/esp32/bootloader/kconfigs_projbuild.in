@@ -1,0 +1,3 @@
+source "/home/honey/.platformio/packages/framework-espidf/components/bootloader/Kconfig.projbuild"
+source "/home/honey/.platformio/packages/framework-espidf/components/esptool_py/Kconfig.projbuild"
+source "/home/honey/.platformio/packages/framework-espidf/components/partition_table/Kconfig.projbuild"

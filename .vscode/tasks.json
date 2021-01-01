@@ -7,7 +7,9 @@
             "command": "/usr/bin/cpp",
             "args": [
                 "-g",
-                "./main.cpp",
+                "-Iinclude",
+                "-Wall",
+                "./src/main.cpp",
                 "-o",
                 "main"
             ],
@@ -26,9 +28,11 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "${file}",
+                "-Iinclude",
+                "-Wall",
+                "./src/main.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "./main"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

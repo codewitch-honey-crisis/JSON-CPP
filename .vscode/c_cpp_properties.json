@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "name": "!!! WARNING !!! AUTO-GENERATED FILE, PLEASE DO NOT MODIFY IT AND USE https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/honey/json/include",
+                "/home/honey/json/src",
+                "/home/honey/json/lib/SD/src",
+                "/home/honey/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/home/honey/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/home/honey/.platformio/packages/framework-arduino-avr/variants/mega",
+                "/home/honey/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/home/honey/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/home/honey/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "/home/honey/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "/home/honey/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/honey/json/include",
+                    "/home/honey/json/src",
+                    "/home/honey/json/lib/SD/src",
+                    "/home/honey/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/home/honey/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/home/honey/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "/home/honey/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/home/honey/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/home/honey/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "/home/honey/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "/home/honey/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=50003",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/home/honey/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

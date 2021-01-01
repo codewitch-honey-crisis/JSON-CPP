@@ -1,5 +1,14 @@
 {
     "files.associations": {
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "limits": "cpp",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "utility": "cpp",
+        "istream": "cpp",
+        "fstream": "cpp"
     }
 }

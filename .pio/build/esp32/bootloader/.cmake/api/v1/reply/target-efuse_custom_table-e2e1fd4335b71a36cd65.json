@@ -1,0 +1,35 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/honey/.platformio/packages/framework-espidf/components/efuse/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "efuse_custom_table::@2da764c922f8b73e9c75",
+	"name" : "efuse_custom_table",
+	"paths" : 
+	{
+		"build" : "esp-idf/efuse",
+		"source" : "/home/honey/.platformio/packages/framework-espidf/components/efuse"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

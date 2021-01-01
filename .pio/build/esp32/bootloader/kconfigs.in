@@ -1,0 +1,5 @@
+source "/home/honey/.platformio/packages/framework-espidf/components/efuse/Kconfig"
+source "/home/honey/.platformio/packages/framework-espidf/components/esp32/Kconfig"
+source "/home/honey/.platformio/packages/framework-espidf/components/esp_common/Kconfig"
+source "/home/honey/.platformio/packages/framework-espidf/components/log/Kconfig"
+source "/home/honey/.platformio/packages/framework-espidf/components/spi_flash/Kconfig"

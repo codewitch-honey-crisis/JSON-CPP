@@ -1,0 +1,2957 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/libsodium/liblibsodium.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"idf_component_register",
+			"add_compile_options",
+			"target_compile_definitions",
+			"set_property",
+			"__component_set_dependencies",
+			"__component_set_all_dependencies",
+			"include_directories",
+			"target_include_directories",
+			"__component_add_include_dirs",
+			"add_c_compile_options"
+		],
+		"files" : 
+		[
+			"/home/honey/.platformio/packages/framework-espidf/tools/cmake/component.cmake",
+			"/home/honey/.platformio/packages/framework-espidf/components/libsodium/CMakeLists.txt",
+			"/home/honey/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 131,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 468,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 449,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 459,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 136,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 502,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 328,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 448,
+				"parent" : 1
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 470,
+				"parent" : 1
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 10
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 471,
+				"parent" : 1
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 13
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 450,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 282,
+				"parent" : 17
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-std=gnu99"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DIDF_VER=\\\"3.40100.200827\\\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DESP_PLATFORM"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CONFIGURED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_WEAK_SYMBOLS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NATIVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/honey/json/.pio/build/esp32/config"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include/sodium"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include/sodium"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/tcpip_adapter/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/app_trace/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				38,
+				40,
+				41,
+				42,
+				44,
+				45,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				55,
+				56,
+				60,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				105,
+				106,
+				107,
+				108,
+				109,
+				111,
+				112
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-std=gnu99"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DIDF_VER=\\\"3.40100.200827\\\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DESP_PLATFORM"
+				},
+				{
+					"fragment" : "-Wno-type-limits"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CONFIGURED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_WEAK_SYMBOLS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NATIVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/honey/json/.pio/build/esp32/config"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include/sodium"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include/sodium"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/tcpip_adapter/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/app_trace/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				37,
+				43,
+				46
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-std=gnu99"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DIDF_VER=\\\"3.40100.200827\\\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DESP_PLATFORM"
+				},
+				{
+					"fragment" : "-Wno-unknown-pragmas"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CONFIGURED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_WEAK_SYMBOLS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NATIVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/honey/json/.pio/build/esp32/config"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include/sodium"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include/sodium"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/tcpip_adapter/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/app_trace/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				39
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DIDF_VER=\\\"3.40100.200827\\\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DESP_PLATFORM"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CONFIGURED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_WEAK_SYMBOLS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NATIVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/honey/json/.pio/build/esp32/config"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include/sodium"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include/sodium"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/tcpip_adapter/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/app_trace/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				54,
+				57,
+				58,
+				59,
+				61,
+				62,
+				63,
+				93
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-std=gnu99"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DIDF_VER=\\\"3.40100.200827\\\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DESP_PLATFORM"
+				},
+				{
+					"fragment" : "-Wno-implicit-fallthrough"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CONFIGURED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_WEAK_SYMBOLS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NATIVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/honey/json/.pio/build/esp32/config"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include/sodium"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include/sodium"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/tcpip_adapter/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/app_trace/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				71,
+				72
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-std=gnu99"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DIDF_VER=\\\"3.40100.200827\\\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DESP_PLATFORM"
+				},
+				{
+					"fragment" : "-DRANDOMBYTES_DEFAULT_IMPLEMENTATION"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CONFIGURED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_WEAK_SYMBOLS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NATIVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/honey/json/.pio/build/esp32/config"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include/sodium"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include/sodium"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/tcpip_adapter/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/app_trace/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				104
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-std=gnu99"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DIDF_VER=\\\"3.40100.200827\\\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DESP_PLATFORM"
+				},
+				{
+					"fragment" : "-Wno-unused-variable"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CONFIGURED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_WEAK_SYMBOLS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NATIVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/honey/json/.pio/build/esp32/config"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/include/sodium"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port_include/sodium"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/tcpip_adapter/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/app_trace/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				110
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "__idf_xtensa::@1daaaad7abe597e030f9"
+		}
+	],
+	"id" : "__idf_libsodium::@66e4f5d448f23c9449a2",
+	"name" : "__idf_libsodium",
+	"nameOnDisk" : "liblibsodium.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/libsodium",
+		"source" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				55,
+				56,
+				60,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				54,
+				57,
+				58,
+				59,
+				61,
+				62,
+				63,
+				93
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_aead/chacha20poly1305/sodium/aead_chacha20poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_aead/xchacha20poly1305/sodium/aead_xchacha20poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_auth/crypto_auth.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_auth/hmacsha256/auth_hmacsha256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_auth/hmacsha512/auth_hmacsha512.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_auth/hmacsha512256/auth_hmacsha512256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_box/crypto_box.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_box/crypto_box_easy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_box/crypto_box_seal.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_box/curve25519xchacha20poly1305/box_curve25519xchacha20poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_box/curve25519xsalsa20poly1305/box_curve25519xsalsa20poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_core/curve25519/ref10/curve25519_ref10.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_core/hchacha20/core_hchacha20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_core/hsalsa20/core_hsalsa20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_core/hsalsa20/ref2/core_hsalsa20_ref2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_core/salsa/ref/core_salsa_ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_generichash/crypto_generichash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/generichash_blake2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/blake2b-compress-avx2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/blake2b-compress-ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/blake2b-compress-sse41.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/blake2b-compress-ssse3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/blake2b-ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/generichash_blake2b.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_hash/crypto_hash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_hash/sha256/hash_sha256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_hash/sha256/cp/hash_sha256_cp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_hash/sha512/hash_sha512.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_hash/sha512/cp/hash_sha512_cp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_kdf/crypto_kdf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_kdf/blake2b/kdf_blake2b.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_kx/crypto_kx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_onetimeauth/crypto_onetimeauth.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_onetimeauth/poly1305/onetimeauth_poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_onetimeauth/poly1305/donna/poly1305_donna.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_onetimeauth/poly1305/sse2/poly1305_sse2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/crypto_pwhash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/argon2/argon2-core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/argon2/argon2-encoding.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 2,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/argon2/argon2-fill-block-ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/argon2/argon2-fill-block-ssse3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/argon2/argon2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/argon2/blake2b-long.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/argon2/pwhash_argon2i.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/crypto_scrypt-common.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/pbkdf2-sha256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/pwhash_scryptsalsa208sha256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/scrypt_platform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/nosse/pwhash_scryptsalsa208sha256_nosse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/sse/pwhash_scryptsalsa208sha256_sse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/crypto_scalarmult.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/scalarmult_curve25519.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/donna_c64/curve25519_donna_c64.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/x25519_ref10.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/consts.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/curve25519_sandy2x.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_invert.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_mul.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_nsquare.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_pack.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe_frombytes_sandy2x.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/ladder.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/ladder_base.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/sandy2x.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_secretbox/crypto_secretbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_secretbox/crypto_secretbox_easy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_secretbox/xchacha20poly1305/secretbox_xchacha20poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_secretbox/xsalsa20poly1305/secretbox_xsalsa20poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_shorthash/crypto_shorthash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_shorthash/siphash24/shorthash_siphash24.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_shorthash/siphash24/shorthash_siphashx24.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 4,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_shorthash/siphash24/ref/shorthash_siphash24_ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 4,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_shorthash/siphash24/ref/shorthash_siphashx24_ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_sign/crypto_sign.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_sign/ed25519/sign_ed25519.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_sign/ed25519/ref10/keypair.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_sign/ed25519/ref10/obsolete.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_sign/ed25519/ref10/open.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_sign/ed25519/ref10/sign.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/crypto_stream.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/aes128ctr/stream_aes128ctr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/aes128ctr/nacl/afternm_aes128ctr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/aes128ctr/nacl/beforenm_aes128ctr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/aes128ctr/nacl/consts_aes128ctr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/aes128ctr/nacl/int128_aes128ctr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/aes128ctr/nacl/stream_aes128ctr_nacl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/aes128ctr/nacl/xor_afternm_aes128ctr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/chacha20/stream_chacha20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/chacha20/dolbeau/chacha20_dolbeau-avx2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/chacha20/dolbeau/chacha20_dolbeau-ssse3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/chacha20/ref/chacha20_ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa20/stream_salsa20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa20/ref/salsa20_ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa20/xmm6/salsa20_xmm6-asm.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa20/xmm6/salsa20_xmm6.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa20/xmm6int/salsa20_xmm6int-avx2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa20/xmm6int/salsa20_xmm6int-sse2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa2012/stream_salsa2012.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa2012/ref/stream_salsa2012_ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa208/stream_salsa208.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/salsa208/ref/stream_salsa208_ref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/xchacha20/stream_xchacha20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_stream/xsalsa20/stream_xsalsa20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/crypto_verify/sodium/verify.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 5,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/randombytes/randombytes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/randombytes/nativeclient/randombytes_nativeclient.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/randombytes/salsa20/randombytes_salsa20_random.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/randombytes/sysrandom/randombytes_sysrandom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/sodium/core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/sodium/runtime.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 6,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/sodium/utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/libsodium/src/libsodium/sodium/version.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/libsodium/port/randombytes_esp32.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

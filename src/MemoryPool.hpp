@@ -111,8 +111,10 @@ namespace mem {
             m_heap = new uint8_t[capacity];
             // initialize the next pointer
             m_next=m_heap;
+            m_capacity = capacity;
             if(nullptr==m_heap)
                 m_capacity=0;
+            
         }
         // allocates the specified number of bytes
         // returns nullptr if there's not enough free

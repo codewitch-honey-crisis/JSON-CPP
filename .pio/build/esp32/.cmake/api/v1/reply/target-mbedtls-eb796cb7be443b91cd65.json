@@ -1,0 +1,452 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/mbedtls/mbedtls/library/libmbedtls.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"add_compile_options",
+			"idf_component_register",
+			"add_c_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/CMakeLists.txt",
+			"/home/honey/.platformio/packages/framework-espidf/tools/cmake/component.cmake",
+			"/home/honey/.platformio/packages/framework-espidf/components/mbedtls/CMakeLists.txt",
+			"/home/honey/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake",
+			"/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 157,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 161,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 449,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 450,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 282,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 459,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 448,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 13,
+				"parent" : 3
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 176,
+				"parent" : 11
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address -Wall -Wextra -W -Wdeclaration-after-statement -Wwrite-strings -Wlogical-op -Wshadow -Wmissing-declarations -Wmissing-prototypes  "
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-std=gnu99"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-DIDF_VER=\\\"3.40100.200827\\\""
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-DESP_PLATFORM"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 0,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/honey/json/.pio/build/esp32/config"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/freertos/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/driver/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_wifi/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/tcpip_adapter/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/honey/.platformio/packages/framework-espidf/components/app_trace/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "__idf_bootloader_support::@d88583f91142925c6676"
+		}
+	],
+	"id" : "mbedtls::@12759e2a35724d846b97",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "mbedtls",
+	"nameOnDisk" : "libmbedtls.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/mbedtls/mbedtls/library",
+		"source" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/debug.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ssl_cache.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ssl_ciphersuites.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ssl_cli.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ssl_cookie.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ssl_srv.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ssl_ticket.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ssl_tls.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/mbedtls_debug.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "/home/honey/.platformio/packages/framework-espidf/components/mbedtls/port/net_sockets.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
