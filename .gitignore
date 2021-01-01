@@ -14,4 +14,3 @@ MappedFile
 .pio/build/esp32/firmware.elf
 .pio/build
 main.S
-main.S
