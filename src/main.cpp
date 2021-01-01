@@ -1197,9 +1197,11 @@ extern "C"
         .io_int_wait = &sdspi_host_io_int_wait,       \
         .command_timeout_ms = 0,                      \
     }
-
+    //spi_get_freq_limit().
 void app_main()
 {
+    
+    
     sdmmc_host_t host = SDSPI_HOST_VSPI();
     sdspi_slot_config_t slot_config = SDSPI_SLOT_CONFIG_DEVKIT();
 
