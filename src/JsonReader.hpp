@@ -1399,7 +1399,7 @@ const char JSON_ERROR_FIELD_TOO_LONG_MSG[] PROGMEM = "Field name too long. Field
                             return false;
                         }
                         break;
-                        
+                    
                     case '}':
                         --depth;
                         --m_objectDepth;

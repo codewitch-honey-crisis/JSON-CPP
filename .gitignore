@@ -9,3 +9,7 @@ gmon.out
 bulk.min.json
 src/MemoryMappedLexSource
 MappedFile
+.pio/build/esp32/firmware.bin
+.pio/build/esp32/.sconsign36.dblite
+.pio/build/esp32/firmware.elf
+.pio/build
