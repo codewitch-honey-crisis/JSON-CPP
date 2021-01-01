@@ -277,7 +277,6 @@ namespace json {
                 while(ls.advance() && (-1<(cp=ls.current()) && cp<33 && 1==ws[cp]));
             }
             return !ls.hasError();
-            
         }
         
         static bool skipStringPart(lex::LexSource& ls, bool skipFinalQuote = true)

@@ -12,8 +12,8 @@
 #include <string.h>
 #include "MemoryPool.hpp"
 #endif
+
 namespace lex {
-#define HTCW_TAB_WIDTH 4
 
 class LexSource {
         int8_t m_state;
@@ -27,7 +27,6 @@ class LexSource {
             
         unsigned long long m_position;
     public:
-        static const uint8_t TabWidth = HTCW_TAB_WIDTH;
         static const int8_t IOError = -3;
         static const int8_t OutOfMemoryError=-4;
     private:
@@ -194,7 +193,7 @@ class LexSource {
         static const int8_t EndOfInput=-1;
         static const int8_t Closed=-2;
         virtual int16_t read()=0;
-
+        
         virtual bool skipToAny(const char* characters7bit,unsigned long long& position,int16_t& match,int8_t& error) {
             error = 0;
             const char *sz;
@@ -208,6 +207,8 @@ class LexSource {
             }
             while(-1<(match=read())) {
                 ++position;
+                if(match>127)
+                    continue;
                 sz = strchr(characters7bit,(char)match);
                 if(nullptr!=sz) {
                     match=*sz;
@@ -236,7 +237,7 @@ class LexSource {
             m_position = 0;
             m_current = 0;
         }
-        
+       
         char skipToAny(const char* characters7bit) {
             int16_t match;
             unsigned long long int pos=m_position;
