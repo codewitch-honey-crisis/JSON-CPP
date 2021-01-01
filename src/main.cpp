@@ -10,16 +10,19 @@
 #if defined ARDUINO
 // arduino needs filenames in 8.3 format!
 #define FILE_PATH "/data.jso"
+#elif defined USELITTLEFS
+#ifdef ESP_PLATFORM
+#define FILE_PATH "/spiffs/data.json"
+#else
+#define FILE_PATH "/data.json"
+#endif
 #elif defined ESP_PLATFORM
 // ESP32 FreeRTOS uses posix style mount points
 #define FILE_PATH "/sdcard/data.jso"
-#elif defined ESP8266
-// with an ESP01 all we have is SPIFFS
-#define FILE_PATH "/data.json"
 #elif defined __linux__
 #define FILE_PATH "./bulk.json"
 #elif defined _WIN32
-#define FILE_PATH "data.json"
+#define FILE_PATH "bulk.json"
 #endif
 #define SEASON_INDEX 7
 #define EPISODE_INDEX 0
@@ -30,7 +33,12 @@
 #endif
 #if defined ARDUINO
 #include <Arduino.h>
+#if USELITTLEFS
+#include <FS.h>
+#include <LittleFS.h>
+#else
 #include <SD.h>
+#endif
 #endif
 #if defined ESP_PLATFORM
 #include "esp_vfs_fat.h"
@@ -91,7 +99,12 @@ void scratch()
     // accessing files and such
 #ifdef ARDUINO
     ArduinoLexSource<256> fls;
-    File file = SD.open(FILE_PATH);
+    File file;
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
     if (!fls.begin(file))
         return;
 #else
@@ -139,13 +152,12 @@ void benchmarks()
 #else
     ArduinoLexSource<LEXSOURCE_CAPTURE_SIZE> fls;
 #endif
-    const char *path = FILE_PATH;
     int nodes = 0;
     char *szdata = nullptr;
 #ifndef IOT
     // don't even try to load this into memory
     // on an arduino or ESP device!
-    FILE *pf = fopen(path, "rb");
+    FILE *pf = fopen(FILE_PATH, "rb");
     fseek(pf, 0L, SEEK_END);
     // use system heap via dynamic memory pool since we don't know how much size we have.
     DynamicMemoryPool readPool((size_t)ftell(pf));
@@ -178,7 +190,7 @@ void benchmarks()
     }
 
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     extractEpisodes(mmls, true);
     ustop = getus();
@@ -189,10 +201,15 @@ void benchmarks()
     println();
 #endif
 #ifdef ARDUINO
-    File file = SD.open(path);
+    File file;
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     ustart = getus();
     extractEpisodes(fls, true);
@@ -224,7 +241,7 @@ void benchmarks()
         println();
     }
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     countEpisodes(mmls);
     ustop = getus();
@@ -235,10 +252,15 @@ void benchmarks()
     println();
 #endif
 #ifdef ARDUINO
-    file = SD.open(path);
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
+
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     ustart = getus();
     countEpisodes(fls);
@@ -270,7 +292,7 @@ void benchmarks()
         println();
     }
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     readAllIds(mmls);
     ustop = getus();
@@ -281,10 +303,15 @@ void benchmarks()
     println();
 #endif
 #ifdef ARDUINO
-    file = SD.open(path);
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
+
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     ustart = getus();
     readAllIds(fls);
@@ -320,7 +347,7 @@ void benchmarks()
         println();
     }
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     skipToSeasonIndexAndEpisodeIndex(mmls, SEASON_INDEX, EPISODE_INDEX);
     ustop = getus();
@@ -331,10 +358,15 @@ void benchmarks()
     println();
 #endif
 #ifdef ARDUINO
-    file = SD.open(path);
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
+
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     ustart = getus();
     skipToSeasonIndexAndEpisodeIndex(fls, SEASON_INDEX, EPISODE_INDEX);
@@ -374,7 +406,7 @@ void benchmarks()
     }
     nodes = 0;
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     JsonReader jr1(mmls);
     ustart = getus();
@@ -393,10 +425,15 @@ void benchmarks()
 #endif
     nodes = 0;
 #ifdef ARDUINO
-    file = SD.open(path);
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
+
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     JsonReader jr2(fls);
     ustart = getus();
@@ -436,7 +473,7 @@ void benchmarks()
         println();
     }
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     JsonReader jr3(mmls);
     ustart = getus();
@@ -449,10 +486,14 @@ void benchmarks()
     println();
 #endif
 #ifdef ARDUINO
-    file = SD.open(path);
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     JsonReader jr4(fls);
     ustart = getus();
@@ -485,7 +526,7 @@ void benchmarks()
         println();
     }
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     parseEpisodes(mmls, true);
     ustop = getus();
@@ -496,10 +537,14 @@ void benchmarks()
     println();
 #endif
 #ifdef ARDUINO
-    file = SD.open(path);
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     ustart = getus();
     parseEpisodes(fls, true);
@@ -531,7 +576,7 @@ void benchmarks()
         println();
     }
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     readStatus(mmls);
     ustop = getus();
@@ -542,10 +587,14 @@ void benchmarks()
     println();
 #endif
 #ifdef ARDUINO
-    file = SD.open(path);
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     ustart = getus();
     readStatus(fls);
@@ -577,7 +626,7 @@ void benchmarks()
         println();
     }
 #ifdef MMAP
-    mmls.open(path);
+    mmls.open(FILE_PATH);
     ustart = getus();
     showExtraction(mmls, true);
     ustop = getus();
@@ -588,10 +637,15 @@ void benchmarks()
     println();
 #endif
 #ifdef ARDUINO
-    file = SD.open(path);
+#ifdef USELITTLEFS
+    file = SPIFFS.open(FILE_PATH,"r");
+#else
+    file = SD.open(FILE_PATH);
+#endif
+
     fls.begin(file);
 #else
-    fls.open(path);
+    fls.open(FILE_PATH);
 #endif
     ustart = getus();
     showExtraction(fls, true);
@@ -1041,7 +1095,7 @@ void printExtraction(MemoryPool &pool, const JsonExtractor &extraction, int dept
             print("[");
             print((int)extraction.pindices[i]);
             print("]: ");
-            printExtraction(pool, extraction.pchildren[i], depth + 1);
+            printExtraction(pool,q, depth + 1);
         }
     }
 }
@@ -1184,13 +1238,20 @@ void setup()
     // to 8.3 filename limits
     // on some platforms
     Serial.begin(115200);
-
+#if USELITTLEFS
+    if(!SPIFFS.begin()) {
+        Serial.println("Unable to mount SPIFFS");
+        while (true)
+            ; // halt
+    }
+#else
     if (!SD.begin())
     {
         Serial.println("Unable to mount SD");
         while (true)
             ; // halt
     }
+#endif
     benchmarks();
     //scratch();
 }
