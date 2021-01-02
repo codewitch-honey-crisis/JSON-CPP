@@ -1210,7 +1210,11 @@ void app_main()
         .max_files = 2,
         .allocation_unit_size = 16 * 1024};
     sdmmc_card_t *card;
-    esp_vfs_fat_sdmmc_mount("/sdcard", &host, &slot_config, &mount_config, &card);
+    if(ESP_OK!=esp_vfs_fat_sdmmc_mount("/sdcard", &host, &slot_config, &mount_config, &card)) {
+        print("Error mounting SD");
+        println();
+        while(true); //halt
+    }
 
     benchmarks();
     //scratch();

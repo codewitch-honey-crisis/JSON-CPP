@@ -1,2 +1,2 @@
 Import("env")
-env.Replace( MKSPIFFSTOOL='python3" "' + env.get("PROJECT_DIR") + '/mklittlefs.py' )
+env.Replace(MKSPIFFSTOOL = env.get ("PROJECT_DIR") + '/mklittlefs.py')
