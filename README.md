@@ -206,12 +206,12 @@ StaticMemoryPool<256> pool;
 JsonElement seasonNumber;
 JsonElement episodeNumber;
 JsonElement name;
-const char\* fields\[\] = {
-    "season\_number",
-    "episode\_number",
+const char* fields[] = {
+    "season_number",
+    "episode_number",
     "name"
 };
-JsonExtractor children\[\] = {
+JsonExtractor children[] = {
     JsonExtractor(&seasonNumber),
     JsonExtractor(&episodeNumber),
     JsonExtractor(name)
@@ -234,7 +234,7 @@ while(jr.skipToFieldValue("episodes",JsonReader::Forward)) {
         ++episodes;
         // read and extract from the next array element
         if(!jr.extract(pool,extraction)) {
-          print("\\t\\t");
+          print("\t\t");
           print(episodes);
           print(". ");
           print("Extraction failed");
@@ -243,7 +243,7 @@ while(jr.skipToFieldValue("episodes",JsonReader::Forward)) {
         }
             
         if(!silent) {
-            print("\\t\\t");
+            print("\t\t");
             print(episodes);
             print(". ");
             printSEFmt((int)seasonNumber.integer(),(int)episodeNumber.integer());
@@ -255,7 +255,7 @@ while(jr.skipToFieldValue("episodes",JsonReader::Forward)) {
 }
 if(jr.hasError()) {
     // report the error
-    print("\\tError (");
+    print("\tError (");
     print((int)jr.error());
     print("): ");
     print(jr.value());
@@ -263,7 +263,7 @@ if(jr.hasError()) {
     return;
 
 } else {
-    print("\\tExtracted ");
+    print("\tExtracted ");
     print(episodes);
     print(" episodes using ");
     print((long long)maxUsedPool);
@@ -306,7 +306,7 @@ Whenever we land on one, we'll be on its `Array` node. From there, we start trav
     
     ++episodes;
     if(!jr.extract(pool,extraction)) {
-      print("\\t\\t");
+      print("\t\t");
       print(episodes);
       print(". ");
       print("Extraction failed");
@@ -316,7 +316,7 @@ Whenever we land on one, we'll be on its `Array` node. From there, we start trav
     }
         
     if(!silent) {
-        print("\\t\\t");
+        print("\t\t");
         print(episodes);
         print(". ");
         printSEFmt((int)seasonNumber.integer(),(int)episodeNumber.integer());
@@ -332,62 +332,62 @@ It should be noted that `extract()` operates on your current logical position an
 
 Above, we were only interested in examining a single object at once, but you aren't limited to that. You can create extractions that drill down and dig values out of the hierarchy at different levels:
 ```
-//JSONPath is roughly $.id,name,created\_by\[0\].name,created\_by\[0\].profile\_path,
-//number\_of\_episodes,last\_episode\_to\_air.name
+//JSONPath is roughly $.id,name,created_by[0].name,created_by[0].profile_path,
+//number_of_episodes,last_episode_to_air.name
 DynamicMemoryPool pool(256);
 if(0==pool.capacity()) {
-  print("\\tNot enough memory to perform the operation");
+  print("\tNot enough memory to perform the operation");
   println();
   return;
 }
 // create nested the extraction query
 
-// we want name and credit\_id from the created\_by array's objects
+// we want name and credit_id from the created_by array's objects
 JsonElement creditName;
 JsonElement creditProfilePath;
-// we also want id, name, and number\_of\_episodes to air from the root object
+// we also want id, name, and number_of_episodes to air from the root object
 JsonElement id;
 JsonElement name;
 JsonElement numberOfEpisodes;
 // we want the last episode to air's name.
 JsonElement lastEpisodeToAirName;
 
-// create nested the extraction query for $.created\_by.name and $.created\_by.profile\_path
-const char\* createdByFields\[\] = {
+// create nested the extraction query for $.created\_by.name and $.created_by.profile_path
+const char* createdByFields[] = {
     "name",
-    "profile\_path"
+    "profile_path"
 };
-JsonExtractor createdByExtractions\[\] = {
+JsonExtractor createdByExtractions[] = {
     JsonExtractor(&amp;creditName),
     JsonExtractor(&amp;creditProfilePath)
 };
 JsonExtractor createdByExtraction(createdByFields,2,createdByExtractions);
 
-// we want the first index of the created\_by array: $.created\_by\[0\]
-JsonExtractor createdByArrayExtractions\[\] {
+// we want the first index of the created_by array: $.created_by[0]
+JsonExtractor createdByArrayExtractions[] {
     createdByExtraction
 };
 
-size\_t createdByArrayIndices\[\] = {0};
+size_t createdByArrayIndices[] = {0};
 
 JsonExtractor createdByArrayExtraction(createdByArrayIndices,1,createdByArrayExtractions);
 
-// we want the name off of last\_episode\_to\_air, like $.last\_episode\_to\_air.name
-const char\* lastEpisodeFields\[\] = {"name"};
-JsonExtractor lastEpisodeExtractions\[\] = {
+// we want the name off of last_episode_to_air, like $.last_episode_to_air.name
+const char* lastEpisodeFields[] = {"name"};
+JsonExtractor lastEpisodeExtractions\[] = {
     JsonExtractor(&lastEpisodeToAirName)
 };
 JsonExtractor lastEpisodeExtraction(lastEpisodeFields,1,lastEpisodeExtractions);
 // we want id,name, and created by from the root
-// $.id, $.name, $.created\_by, $.number\_of\_episodes and $.last\_episode\_to\_air
-const char\* showFields\[\] = {
+// $.id, $.name, $.created_by, $.number_of_episodes and $.last_episode_to_air
+const char* showFields[] = {
     "id",
     "name",
-    "created\_by",
-    "number\_of\_episodes",
-    "last\_episode\_to\_air"
+    "created_by",
+    "number_of_episodes",
+    "last_episode_to_air"
 };
-JsonExtractor showExtractions\[\] = {
+JsonExtractor showExtractions[] = {
     JsonExtractor(&id),
     JsonExtractor(&name),
     createdByArrayExtraction,
@@ -401,7 +401,7 @@ JsonReader jr(ls);
 if(jr.extract(pool,showExtraction)) {
     if(!silent)
       printExtraction(pool,showExtraction,0);
-    print("\\tUsed ");
+    print("\tUsed ");
     print((int)pool.used());
     print(" bytes of the pool");
     println();
@@ -418,10 +418,7 @@ I'm not sure if that's syntactically proper for JSONPath but the idea should hop
 
 There's currently a significant limitation to this query setup and that is that it is currently impossible to do certain kinds of non-backtracking queries, such as when you want to get multiple fields off an object as well as recursively drill down indefinitely into one of its fields. I will be adding a sort of callback extractor that will notify you as extractions arrive so you can retrieve an arbitrary series of values.
 
-Conclusion
-----------
-
-_main.cpp_ has plenty of code in there to get you started. Hopefully, this article demonstrated what I set out to - software by design, by way of a scalable JSON processor. The functional requirements gathering here was abbreviated and informal, and produced a set of equally informal design decisions, but that was enough to produce software that met its goals. A little bit of upfront planning goes a long way.
+Build main.cpp with your favorite compiler for a demo.
 
 History
 -------
