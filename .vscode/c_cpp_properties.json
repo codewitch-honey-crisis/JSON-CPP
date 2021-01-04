@@ -8,9 +8,9 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/honey/json/include",
-                "/home/honey/json/src",
-                "/home/honey/json/.pio/libdeps/mega2560/SD/src",
+                "/home/honey/json/JSON-CPP/include",
+                "/home/honey/json/JSON-CPP/src",
+                "/home/honey/json/JSON-CPP/.pio/libdeps/mega2560/SD/src",
                 "/home/honey/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                 "/home/honey/.platformio/packages/framework-arduino-avr/cores/arduino",
                 "/home/honey/.platformio/packages/framework-arduino-avr/variants/mega",
@@ -24,9 +24,9 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/honey/json/include",
-                    "/home/honey/json/src",
-                    "/home/honey/json/.pio/libdeps/mega2560/SD/src",
+                    "/home/honey/json/JSON-CPP/include",
+                    "/home/honey/json/JSON-CPP/src",
+                    "/home/honey/json/JSON-CPP/.pio/libdeps/mega2560/SD/src",
                     "/home/honey/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                     "/home/honey/.platformio/packages/framework-arduino-avr/cores/arduino",
                     "/home/honey/.platformio/packages/framework-arduino-avr/variants/mega",
