@@ -352,7 +352,7 @@ JsonElement numberOfEpisodes;
 // we want the last episode to air's name.
 JsonElement lastEpisodeToAirName;
 
-// create nested the extraction query for $.created\_by.name and $.created_by.profile_path
+// create nested the extraction query for $.created_by.name and $.created_by.profile_path
 const char* createdByFields[] = {
     "name",
     "profile_path"
@@ -374,7 +374,7 @@ JsonExtractor createdByArrayExtraction(createdByArrayIndices,1,createdByArrayExt
 
 // we want the name off of last_episode_to_air, like $.last_episode_to_air.name
 const char* lastEpisodeFields[] = {"name"};
-JsonExtractor lastEpisodeExtractions\[] = {
+JsonExtractor lastEpisodeExtractions[] = {
     JsonExtractor(&lastEpisodeToAirName)
 };
 JsonExtractor lastEpisodeExtraction(lastEpisodeFields,1,lastEpisodeExtractions);
@@ -412,17 +412,10 @@ if(jr.extract(pool,showExtraction)) {
 ```
 Here, we're creating several nested object extractors and even threw an array extractor in for good measure. The query translates roughly to the following JSONPath:
 
-```$.id,name,created\_by\[0\].name,created\_by\[0\].profile\_path,number\_of\_episodes,last\_episode\_to\_air.name```
+```$.id,name,created_by[0].name,created_by[0].profile_path,number_of_episodes,last_episode_to_air.name```
 
 I'm not sure if that's syntactically proper for JSONPath but the idea should hopefully be clear. Since we're already on the root when we start, we just `extract()` from there.
 
 There's currently a significant limitation to this query setup and that is that it is currently impossible to do certain kinds of non-backtracking queries, such as when you want to get multiple fields off an object as well as recursively drill down indefinitely into one of its fields. I will be adding a sort of callback extractor that will notify you as extractions arrive so you can retrieve an arbitrary series of values.
 
 Build main.cpp with your favorite compiler for a demo.
-
-History
--------
-
-*   30th December, 2020 - Initial submission
-*   31st December, 2020 - Update 1 - fixed compilation issues on windows + MSVC
-*   1st January, 2020 - Update 2 - added PlatformIO builds to GitHub project
