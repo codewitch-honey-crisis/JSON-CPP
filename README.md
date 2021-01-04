@@ -3,20 +3,6 @@
 Introduction
 ------------
 
-**Update:** Fixed windows compilation issues, as per the article comments. I'm flying blind without a windows machine right now so a big thank you to Randor for helping me get that sorted out.
-
-**Update 2:** Big project changes, including integrating PlatformIO builds for ESP32, Arduino Mega 2560 and native machines. \*You'll need PlatformIO w/ VS Code and the appropriate packages installed for those boards. I'm not including this with the zip file here as it's too big. It's available on GitHub.
-
-I've been writing articles about JSON (C++) as it evolves, and this latest article introduces a codebase with dramatically improved performance while retaining its tiny memory footprint.
-
-Furthermore, I've decided to approach this from a higher level, and allow you to fall back on my [older content](https://www.codeproject.com/Articles/5290321/Diet-JSON-and-a-Coke-An-Exploration-of-Incredibly) for more boots on the ground specifics. With the previous article, I think it was too hard for the reader to know where to begin with it. I aim to connect with you better this time, and show you how this represents an architecturally significant improvement in JSON processing which enables demand streaming for JSON on virtually any device.
-
-I won't be drowning you in UML, or a system inundated with a myriad of "industry standard" design patterns. There's a time and place for that, and it's called enterprise software\*. We're taking a very streamlined approach I use for most projects. Gathering and identifying functional requirements plays the primary role, with design decisions flowing from that, before finally getting into the code. It's a very simple process, admittedly, and you'd want to do more with larger professional projects than you would here. This is good for breaking down single developer projects so they aren't overwhelming, and then taking those projects and explaining them to other people.
-
-\* I'm half kidding here. The truth is all that stuff is useful to understand and to practice - even in your own projects as it can improve your ability design software as well as to work on large projects and with large or disparate teams of developers and just in general make you a better developer. At the same time, it's usually overkill for a developer working alone.
-
-Conceptualizing this Mess
--------------------------
 
 Typically, JSON processors validate entire documents and parse them into memory trees. This is quite useful for a number of scenarios but doesn't lend itself to big data, where we need time and space efficiency improvements orders of magnitude over common JSON processing algorithms.
 
