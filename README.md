@@ -1,14 +1,4 @@
 # JSON-CPP
-Article Source   
-
-**Please choose 'View Source' in your browser to view the HTML, or File | Save to save this file to your hard drive for editing.**
-
-* * *
-
-*   [Download source - 1.6 MB](/KB/connected-devices/5290815/json.zip)
-*   [Download latest from GitHub\*](https://github.com/codewitch-honey-crisis/JSON-CPP)
-
-![JSON by Design](/KB/connected-devices/5290815/jsonbydesign.jpg)
 
 Introduction
 ------------
